@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/shop_detail_iv"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/shop_detail_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_detail_iv"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/item_shop_icon"
+        android:includeFontPadding="false"
+        android:text="99"
+        android:textColor="@color/color_orange"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/shop_detail_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shop_detail_money"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@id/shop_detail_money"
+        android:includeFontPadding="false"
+        android:text="积分"
+        android:textColor="@color/color_orange"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/shop_detail_ori_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shop_detail_money"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@id/shop_detail_money_text"
+        android:includeFontPadding="false"
+        android:text="原价：59.90"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_shop_detail_send"
+        android:layout_width="41dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/shop_detail_money"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:text="包邮"
+        android:gravity="center"
+        android:background="@drawable/shop_round_orange"
+        android:textColor="@color/colorWhite"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/shop_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小米9号平衡车成人体感智能骑行遥控漂移代步电动九号平衡车"
+        android:layout_below="@+id/item_shop_detail_send"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:textSize="17dp"
+        android:textColor="@color/colorTextBlack"
+        />
+    <TextView
+        android:id="@+id/shop_shengyu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="剩余：59件"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/shop_detail_title"
+        android:gravity="center"
+        android:textColor="@color/colorLine_89"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/shop_shengyu"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/question_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="fill_vertical"
+            android:text="商品详情"
+            android:textColor="@color/colorLine_89"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@color/line_color"
+            android:layout_toEndOf="@+id/question_num" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@color/line_color"
+            android:layout_toStartOf="@+id/question_num" />
+    </RelativeLayout>
+
+</RelativeLayout>

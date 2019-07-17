@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <TextView
+        android:id="@+id/item_order_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingStart="13dp"
+        android:text="订单号：482314129101345321"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/item_order_icon"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/item_order_id"
+        android:layout_marginStart="13dp"
+        android:scaleType="centerCrop"
+/>
+
+    <TextView
+        android:id="@+id/item_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/item_order_id"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/item_order_icon"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="南极人颈椎按摩器颈部腰部肩部家用揉捏脖子护仪"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/item_order_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_order_title"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/item_order_icon"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="收件信息：河北省廊坊市三河市燕郊经济开发区维多利亚7号楼7单元12室"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/item_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_order_icon"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="41dp"
+        android:includeFontPadding="false"
+        android:text="共计1件商品"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/item_order_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_order_icon"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@id/item_order_num"
+        android:includeFontPadding="false"
+        android:text="合计：99积分"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/order_state"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_below="@+id/item_order_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/me_round_register"
+        android:gravity="center"
+        android:text="已发货"
+        android:textColor="@color/color_orange"
+        android:textSize="14dp" />
+
+</RelativeLayout>

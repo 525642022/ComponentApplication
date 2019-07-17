@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="269dp"
+    android:layout_height="317dp"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="269dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/round_update"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/question_num"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+                android:text="本地答题结果"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/question_num"
+                android:background="@color/colorTextBlack" />
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/question_num"
+                android:background="@color/colorTextBlack" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/question_right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="正确：7"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/question_error"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="错误：3"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/question_points"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="获得积分：70"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/question_ok"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_result"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>

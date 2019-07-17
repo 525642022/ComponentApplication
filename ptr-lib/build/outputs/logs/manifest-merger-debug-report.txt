@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:3:5-38
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:5:5-30
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:4:5-28
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+application
+ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml:6:5-20
+uses-sdk
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		ADDED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\mygit\ComponentApplication\ptr-lib\AndroidManifest.xml

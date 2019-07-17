@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">home</string>
+    <string name="title_dialog">Tips</string>
+    <string name="versionchecklib_download_apkname">%s.apk</string>
+    <string name="message_permission_failed">我们需要你提供一些必要的权限，请允许！</string>
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+</resources>

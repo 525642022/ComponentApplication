@@ -1,0 +1,1 @@
+include ':app', ':commonlib', ':home', ':answer', ':shop', ':me', ':uilibrary', ':ptr-lib', ':addresslibrary', ':addresspickerlib', ':banner', ':commonactivity'

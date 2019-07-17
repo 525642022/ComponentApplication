@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/home_three_pic_rl"
+    android:layout_height="165dp">
+
+    <TextView
+        android:id="@+id/item_three_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginEnd="13dp"
+        android:text="2019年中央广播电视台总台3·15晚会正在直播，不卫生的卫生用品被曝光"
+        android:textColor="@color/colorTextBlack" />
+
+    <LinearLayout
+        android:id="@+id/item_three_ll"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_below="@+id/item_three_title"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="13dp">
+
+        <ImageView
+            android:id="@+id/item_three_icon1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_pp4" />
+
+        <ImageView
+            android:id="@+id/item_three_icon2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_pp4" />
+
+        <ImageView
+            android:id="@+id/item_three_icon3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_pp4" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_three_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_three_ll"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorLine_89"
+        android:layout_marginStart="13dp"
+        android:textSize="11dp"
+        android:text="中国经济网"
+        />
+    <TextView
+        android:id="@+id/item_three_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_three_ll"
+        android:textColor="@color/colorLine_89"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_three_host"
+        android:layout_marginStart="13dp"
+        android:textSize="11dp"
+        android:text="30秒前"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/colorLine" />
+</RelativeLayout>

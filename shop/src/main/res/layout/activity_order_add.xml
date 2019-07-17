@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp">
+
+        <ImageView
+            android:id="@+id/order_add_icon"
+            android:layout_width="113dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/order_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/order_add_icon"
+            android:includeFontPadding="false"
+            android:text="天猫精灵 X1智能音箱wifi声控智能音响语音"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_add_title"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/order_add_icon"
+            android:includeFontPadding="false"
+            android:text="99"
+            android:textColor="@color/color_orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_add_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_add_money"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/order_add_money"
+            android:includeFontPadding="false"
+            android:text="积分"
+            android:textColor="@color/color_orange"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/colorLine" />
+
+    <EditText
+        android:id="@+id/order_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_input_phone"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/bottom_line"
+        android:hint="收货人姓名"
+        android:maxLength="11"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorLine_89"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/order_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_input_phone"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:inputType="number"
+        android:background="@drawable/bottom_line"
+        android:hint="请输入收货人手机号码"
+        android:maxLength="11"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorLine_89"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:text="所在地区"
+        android:textColor="@color/colorLine_89"
+        android:textSize="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/line_color" />
+    <EditText
+        android:id="@+id/order_input_address_detail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_input_phone"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/bottom_line"
+        android:gravity="top"
+        android:hint="详细地址：如街道、门牌号、小区、楼栋号、单元室等"
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorLine_89"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/commit_order"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/shop_round_orange_30"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</LinearLayout>

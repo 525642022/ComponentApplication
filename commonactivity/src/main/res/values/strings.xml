@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CommonActivity</string>
+    <string name="send_code">获取验证码</string>
+</resources>

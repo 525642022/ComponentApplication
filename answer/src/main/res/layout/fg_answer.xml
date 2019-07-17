@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/answer_dati_bg" />
+    <TextView
+        android:id="@+id/fg_answer_law"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        android:background="@mipmap/answer_dati_bt_bg"
+        android:textColor="@color/colorWhite"
+        android:text="法律法规"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:id="@+id/fg_answer_live"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        android:background="@mipmap/answer_dati_bt_bg"
+        android:textColor="@color/colorWhite"
+        android:text="生活常识"
+        android:layout_below="@+id/fg_answer_law"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+
+        />
+
+    <TextView
+        android:id="@+id/fg_answer_poem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/answer_dati_bt_bg"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        android:textColor="@color/colorWhite"
+        android:text="诗词名著"
+        android:layout_below="@+id/fg_answer_live"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        />
+
+</RelativeLayout>

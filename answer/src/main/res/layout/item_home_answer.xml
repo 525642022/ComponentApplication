@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="106dp">
+    <TextView
+        android:id="@+id/item_answer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="那些常用的交通工具在日常中你不知道的小窍门有哪些"
+        android:textSize="17dp"
+        android:textColor="@color/colorTextBlack"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="18dp"
+        android:includeFontPadding="false"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        />
+    <TextView
+        android:id="@+id/item_answer_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="13dp"
+        android:text="全部答对可获得100积分"
+        android:textSize="11dp"
+        android:textColor="@color/colorLine_89"
+        android:includeFontPadding="false"
+        />
+    <TextView
+        android:id="@+id/start_answer"
+        android:layout_width="63dp"
+        android:layout_height="28dp"
+        android:background="@drawable/answer_round_register"
+        android:textColor="@color/color_orange"
+        android:text="开始"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="13dp"
+        android:textSize="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="13dp"
+    android:layout_marginEnd="13dp"
+    android:background="@color/line_color"
+    />
+</RelativeLayout>

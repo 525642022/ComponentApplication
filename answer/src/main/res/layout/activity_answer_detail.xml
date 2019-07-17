@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/answer_dati_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/answer_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="53dp"
+            android:text="世界上最毒的植物是什么？"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/answer_detail_questionA"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="55dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/answer_round_question"
+            android:gravity="center"
+            android:text="A.夹竹桃"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/answer_detail_questionB"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/answer_detail_questionA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="55dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/answer_round_question"
+            android:gravity="center"
+            android:text="B.猪笼草"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/answer_detail_questionC"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_below="@+id/answer_detail_questionB"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/answer_round_question"
+            android:gravity="center"
+            android:text="C.白蛇根草"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/answer_detail_questionD"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/answer_detail_questionC"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="55dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/answer_round_question"
+            android:gravity="center"
+            android:text="D.曼陀罗"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_below="@+id/answer_detail_questionD"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="正确答案：A"
+            android:textColor="@color/color_orange"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/answer_detail_next"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/question_num_rl"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/answer_round_login"
+            android:gravity="center"
+            android:text="下一题"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/question_num_rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/question_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="fill_vertical"
+                android:text="第1题"
+                android:textColor="@color/colorLine_89"
+                android:textSize="11dp" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="@color/line_color"
+                android:layout_toEndOf="@+id/question_num" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@color/line_color"
+                android:layout_toStartOf="@+id/question_num" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

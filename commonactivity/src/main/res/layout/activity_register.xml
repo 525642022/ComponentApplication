@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/register_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/common_login_bg" />
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:src="@mipmap/common_logo_round" />
+
+    <ImageView
+        android:id="@+id/register_title"
+        android:layout_width="85dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/register_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:src="@mipmap/common_title" />
+
+    <EditText
+        android:id="@+id/register_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/register_title"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/common_bottom_line"
+        android:hint="请输入手机号"
+        android:maxLength="11"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorEditHint"
+        android:textCursorDrawable="@drawable/common_color_cursor"
+        android:textSize="14dp" />
+
+    <EditText
+
+        android:id="@+id/register_input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/register_input_phone"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/common_bottom_line"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:maxLength="11"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorEditHint"
+        android:textCursorDrawable="@drawable/common_color_cursor"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/register_code_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/register_input_pwd"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/common_bottom_line">
+
+        <EditText
+            android:id="@+id/register_input_code"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/colorWhite"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorEditHint"
+            android:textCursorDrawable="@drawable/common_color_cursor"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toStartOf="@+id/send_code"
+            android:background="@color/colorLine_89" />
+
+        <TextView
+            android:id="@+id/send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:text="@string/send_code"
+            android:textColor="@color/color_orange"
+            android:textSize="14dp"
+
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/register_code_rl"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/common_round_login"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/register_register"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/common_round_register"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/color_orange"
+        android:textSize="16dp" />
+</RelativeLayout>

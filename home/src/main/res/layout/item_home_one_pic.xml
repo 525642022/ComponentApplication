@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_one_pic_rl"
+    android:layout_width="match_parent"
+    android:layout_height="93dp">
+
+    <TextView
+        android:id="@+id/item_one_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toStartOf="@+id/item_one_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="连续10年坐在总理旁边的女翻译张璐"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/item_one_icon"
+        android:layout_width="113dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="13dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_pp4" />
+
+    <TextView
+        android:id="@+id/item_one_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_one_title"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:text="中国经济网"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/item_one_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_one_title"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_one_host"
+        android:text="30秒前"
+        android:textColor="@color/colorLine_89"
+        android:textSize="11dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/colorLine" />
+</RelativeLayout>
